@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Data;
 using System.Data.SqlClient;
+using Bella.Models;
 
 namespace Bella.Data
 {
@@ -20,7 +21,7 @@ namespace Bella.Data
         /// <summary>
         /// Adds a new product to the database.
         /// </summary>
-        public bool AddNewProduct(Product product)
+        public bool Add(Product product)
         {
             try
             {
@@ -62,7 +63,7 @@ namespace Bella.Data
         /// <summary>
         /// Retrieves all products from the database.
         /// </summary>
-        public List<Product> GetAllProducts()
+        public List<Product> GetAll()
         {
             List<Product> products = new List<Product>();
 
@@ -110,5 +111,105 @@ namespace Bella.Data
 
             return products;
         }
+
+        public bool Update(Product product)
+        {
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                string query = @"UPDATE Products
+                         SET Name = @Name,
+                             Description = @Description,
+                             Price = @Price,
+                             StockQuantity = @StockQuantity,
+                             Brand = @Brand,
+                             Material = @Material,
+                             Color = @Color,
+                             Size = @Size,
+                             ImageUrl = @ImageUrl,
+                             CategoryId = @CategoryId,
+                             UpdatedAt = @UpdatedAt
+                         WHERE ProductId = @ProductId";
+
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@Name", product.Name);
+                    cmd.Parameters.AddWithValue("@Description", product.Description);
+                    cmd.Parameters.AddWithValue("@Price", product.Price);
+                    cmd.Parameters.AddWithValue("@StockQuantity", product.StockQuantity);
+                    cmd.Parameters.AddWithValue("@Brand", product.Brand);
+                    cmd.Parameters.AddWithValue("@Material", product.Material);
+                    cmd.Parameters.AddWithValue("@Color", product.Color);
+                    cmd.Parameters.AddWithValue("@Size", product.Size);
+                    cmd.Parameters.AddWithValue("@ImageUrl", product.ImageUrl);
+                    cmd.Parameters.AddWithValue("@CategoryId", product.CategoryId);
+                    cmd.Parameters.AddWithValue("@UpdatedAt", DateTime.Now);
+                    cmd.Parameters.AddWithValue("@ProductId", product.ProductId);
+
+                    conn.Open();
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    return rowsAffected > 0;
+                }
+            }
+        }
+
+        public bool Delete(int productId)
+        {
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                string query = @"DELETE FROM Products WHERE ProductId = @ProductId";
+
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@ProductId", productId);
+
+                    conn.Open();
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    return rowsAffected > 0;
+                }
+            }
+        }
+
+        public Product GetById(int productId)
+        {
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                string query = @"SELECT ProductId, Name, Description, Price, StockQuantity, Brand, Material, Color, Size, 
+                                ImageUrl, CategoryId, CreatedAt, UpdatedAt
+                         FROM Products
+                         WHERE ProductId = @ProductId";
+
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@ProductId", productId);
+
+                    conn.Open();
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            return new Product
+                            {
+                                ProductId = reader.GetInt32(reader.GetOrdinal("ProductId")),
+                                Name = reader.GetString(reader.GetOrdinal("Name")),
+                                Description = reader.GetString(reader.GetOrdinal("Description")),
+                                Price = reader.GetDecimal(reader.GetOrdinal("Price")),
+                                StockQuantity = reader.GetInt32(reader.GetOrdinal("StockQuantity")),
+                                Brand = reader.GetString(reader.GetOrdinal("Brand")),
+                                Material = reader.GetString(reader.GetOrdinal("Material")),
+                                Color = reader.GetString(reader.GetOrdinal("Color")),
+                                Size = reader.GetString(reader.GetOrdinal("Size")),
+                                ImageUrl = reader.IsDBNull(reader.GetOrdinal("ImageUrl")) ? null : reader.GetString(reader.GetOrdinal("ImageUrl")),
+                                CategoryId = reader.GetInt32(reader.GetOrdinal("CategoryId")),
+                                CreatedAt = reader.GetDateTime(reader.GetOrdinal("CreatedAt")),
+                                UpdatedAt = reader.GetDateTime(reader.GetOrdinal("UpdatedAt"))
+                            };
+                        }
+                    }
+                }
+            }
+            return null; // Return null if no product is found
+        }
+
+
     }
 }
