@@ -43,6 +43,7 @@ namespace Bella.Pages.Products
                 {
                     // Display success message
                     Response.Write("<script>alert('Product added successfully!');</script>");
+                    Response.Redirect("~/Pages/Products/view.aspx");
                 }
                 else
                 {

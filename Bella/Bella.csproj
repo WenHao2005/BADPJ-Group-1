@@ -71,28 +71,41 @@
     <Content Include="App_Data\BellaDB_log.ldf">
       <DependentUpon>BellaDB.mdf</DependentUpon>
     </Content>
-    <Content Include="Cart.aspx" />
+    <Content Include="CSS\Shop.css" />
+    <Content Include="Images\jacket_1.png" />
+    <Content Include="Images\jacket_2.png" />
+    <Content Include="Images\jacket_3.png" />
+    <Content Include="Pages\Add To Cart\Cart.aspx" />
     <Content Include="CSS\Register.css" />
     <Content Include="CSS\Site1.css" />
     <Content Include="Donations.aspx" />
     <Content Include="Homepage.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Pages\Products\Add.aspx" />
+    <Content Include="Pages\Products\delete.aspx" />
+    <Content Include="Pages\Products\label.aspx" />
+    <Content Include="Pages\Products\update.aspx" />
     <Content Include="Pages\Products\view.aspx" />
+    <Content Include="Pages\Shopping Page\AllProd.aspx" />
+    <Content Include="Pages\Shopping Page\filter.aspx" />
+    <Content Include="Pages\Shopping Page\filteredProd.aspx" />
+    <Content Include="Pages\Shopping Page\delme_Product.aspx" />
     <Content Include="Products.aspx" />
-    <Content Include="Register.aspx" />
+    <Content Include="Pages\Registration\Register.aspx" />
     <Content Include="UserManagement.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cart.aspx.cs">
+    <Compile Include="Data\CategoriesDB.cs" />
+    <Compile Include="Pages\Add To Cart\Cart.aspx.cs">
       <DependentUpon>Cart.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Cart.aspx.designer.cs">
+    <Compile Include="Pages\Add To Cart\Cart.aspx.designer.cs">
       <DependentUpon>Cart.aspx</DependentUpon>
     </Compile>
     <Compile Include="Data\ProductDB.cs" />
+    <Compile Include="Data\ShoppingDB.cs" />
     <Compile Include="Donations.aspx.cs">
       <DependentUpon>Donations.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -123,12 +136,61 @@
     <Compile Include="Pages\Products\Add.aspx.designer.cs">
       <DependentUpon>Add.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Products\delete.aspx.cs">
+      <DependentUpon>delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Products\delete.aspx.designer.cs">
+      <DependentUpon>delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Products\label.aspx.cs">
+      <DependentUpon>label.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Products\label.aspx.designer.cs">
+      <DependentUpon>label.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Products\update.aspx.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Products\update.aspx.designer.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Products\view.aspx.cs">
       <DependentUpon>view.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pages\Products\view.aspx.designer.cs">
       <DependentUpon>view.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Shopping Page\AllProd.aspx.cs">
+      <DependentUpon>AllProd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Shopping Page\AllProd.aspx.designer.cs">
+      <DependentUpon>AllProd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Shopping Page\filter.aspx.cs">
+      <DependentUpon>filter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Shopping Page\filter.aspx.designer.cs">
+      <DependentUpon>filter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Shopping Page\filteredProd.aspx.cs">
+      <DependentUpon>filteredProd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Shopping Page\filteredProd.aspx.designer.cs">
+      <DependentUpon>filteredProd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Shopping Page\delme_Product.aspx.cs">
+      <DependentUpon>delme_Product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Shopping Page\delme_Product.aspx.designer.cs">
+      <DependentUpon>delme_Product.aspx</DependentUpon>
     </Compile>
     <Compile Include="Products.aspx.cs">
       <DependentUpon>Products.aspx</DependentUpon>
@@ -138,11 +200,11 @@
       <DependentUpon>Products.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Register.aspx.cs">
+    <Compile Include="Pages\Registration\Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Register.aspx.designer.cs">
+    <Compile Include="Pages\Registration\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site1.Master.cs">

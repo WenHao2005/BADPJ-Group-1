@@ -22,12 +22,19 @@
                     <asp:BoundField DataField="Color" HeaderText="Color" />
                     <asp:BoundField DataField="Size" HeaderText="Size" />
                     <asp:BoundField DataField="CategoryId" HeaderText="Category ID" />
+                    <asp:BoundField DataField="ImageUrl" HeaderText="ImageUrl" />
                 
-                    
+                <asp:TemplateField HeaderText="Image">
+                    <ItemTemplate>
+                        <asp:Image ID="Image1" height="150px" runat="server" ImageUrl='<%# "~/Images/" + Eval("ImageUrl") %>' AlternateText="Image not available" />
+                    </ItemTemplate>
+                </asp:TemplateField>                    
+
                     <asp:TemplateField HeaderText="Actions">
                         <ItemTemplate>
                             <a href="update.aspx?ProductId=<%# Eval("ProductId") %>">Update</a> |
-                            <a href="delete.aspx?ProductId=<%# Eval("ProductId") %>" onclick="return confirm('Are you sure you want to delete this product?');">Delete</a>
+                            <a href="delete.aspx?ProductId=<%# Eval("ProductId") %>" onclick="return confirm('Are you sure you want to delete this product?');">Delete</a> |
+                            <a href='label.aspx?ProductId=<%# Eval("ProductId") %>'>Label</a>
                         </ItemTemplate>
                     </asp:TemplateField>
 
@@ -35,5 +42,12 @@
             </asp:GridView>
         </div>
     </form>
+    <asp:HyperLink ID="hladdprod" runat="server" NavigateUrl="~/Pages/Products/add.aspx" CssClass="btn">Add New Product</asp:HyperLink>
+    <p>
+        
+        
+        
+
+    </p>
 </body>
 </html>

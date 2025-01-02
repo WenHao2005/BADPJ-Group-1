@@ -58,6 +58,8 @@
                 </tr>
             </table>
         </div>
+
+    <asp:HyperLink ID="hlBackToList" runat="server" NavigateUrl="~/Pages/Products/view.aspx" CssClass="btn">Back to List</asp:HyperLink>
     </form>
 </body>
 </html>
