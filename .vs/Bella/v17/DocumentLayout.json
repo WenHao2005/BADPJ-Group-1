@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Proj_BADPJ\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6DAD982B-BDBD-4A5A-B78C-D9DC75B24618}|Bella\\Bella.csproj|c:\\proj_badpj\\bella\\pages\\products\\view.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{6DAD982B-BDBD-4A5A-B78C-D9DC75B24618}|Bella\\Bella.csproj|solutionrelative:bella\\pages\\products\\view.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DAD982B-BDBD-4A5A-B78C-D9DC75B24618}|Bella\\Bella.csproj|C:\\Proj_BADPJ\\bella\\data\\productdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DAD982B-BDBD-4A5A-B78C-D9DC75B24618}|Bella\\Bella.csproj|solutionrelative:bella\\data\\productdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DAD982B-BDBD-4A5A-B78C-D9DC75B24618}|Bella\\Bella.csproj|c:\\proj_badpj\\bella\\pages\\products\\update.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{6DAD982B-BDBD-4A5A-B78C-D9DC75B24618}|Bella\\Bella.csproj|solutionrelative:bella\\pages\\products\\update.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DAD982B-BDBD-4A5A-B78C-D9DC75B24618}|Bella\\Bella.csproj|C:\\Proj_BADPJ\\bella\\pages\\shopping page\\allprod.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{6DAD982B-BDBD-4A5A-B78C-D9DC75B24618}|Bella\\Bella.csproj|solutionrelative:bella\\pages\\shopping page\\allprod.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__PROJ_BADPJ_BELLA_APP_DATA_BELLADB.MDF/True/SqlTable/dbo.Products.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DAD982B-BDBD-4A5A-B78C-D9DC75B24618}|Bella\\Bella.csproj|C:\\Proj_BADPJ\\bella\\pages\\shopping page\\allprod.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DAD982B-BDBD-4A5A-B78C-D9DC75B24618}|Bella\\Bella.csproj|solutionrelative:bella\\pages\\shopping page\\allprod.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__PROJ_BADPJ_BELLA_APP_DATA_BELLADB.MDF/True/SqlTable/dbo.Category.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DAD982B-BDBD-4A5A-B78C-D9DC75B24618}|Bella\\Bella.csproj|C:\\Proj_BADPJ\\bella\\pages\\products\\view.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DAD982B-BDBD-4A5A-B78C-D9DC75B24618}|Bella\\Bella.csproj|solutionrelative:bella\\pages\\products\\view.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "update.aspx",
+              "DocumentMoniker": "C:\\Proj_BADPJ\\Bella\\Pages\\Products\\update.aspx",
+              "RelativeDocumentMoniker": "Bella\\Pages\\Products\\update.aspx",
+              "ToolTip": "C:\\Proj_BADPJ\\Bella\\Pages\\Products\\update.aspx",
+              "RelativeToolTip": "Bella\\Pages\\Products\\update.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-01-03T07:22:57.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "view.aspx",
+              "DocumentMoniker": "C:\\Proj_BADPJ\\Bella\\Pages\\Products\\view.aspx",
+              "RelativeDocumentMoniker": "Bella\\Pages\\Products\\view.aspx",
+              "ToolTip": "C:\\Proj_BADPJ\\Bella\\Pages\\Products\\view.aspx",
+              "RelativeToolTip": "Bella\\Pages\\Products\\view.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-01-03T07:22:34.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "dbo.Products [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__PROJ_BADPJ_BELLA_APP_DATA_BELLADB.MDF/True/SqlTable/dbo.Products.sql",
+              "ToolTip": "dbo.Products [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-01-03T07:04:13.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "dbo.Category [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__PROJ_BADPJ_BELLA_APP_DATA_BELLADB.MDF/True/SqlTable/dbo.Category.sql",
+              "ToolTip": "dbo.Category [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-01-03T07:02:30.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AllProd.aspx.cs",
+              "DocumentMoniker": "C:\\Proj_BADPJ\\Bella\\Pages\\Shopping Page\\AllProd.aspx.cs",
+              "RelativeDocumentMoniker": "Bella\\Pages\\Shopping Page\\AllProd.aspx.cs",
+              "ToolTip": "C:\\Proj_BADPJ\\Bella\\Pages\\Shopping Page\\AllProd.aspx.cs",
+              "RelativeToolTip": "Bella\\Pages\\Shopping Page\\AllProd.aspx.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAA3wEMAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T15:23:27.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AllProd.aspx",
+              "DocumentMoniker": "C:\\Proj_BADPJ\\Bella\\Pages\\Shopping Page\\AllProd.aspx",
+              "RelativeDocumentMoniker": "Bella\\Pages\\Shopping Page\\AllProd.aspx",
+              "ToolTip": "C:\\Proj_BADPJ\\Bella\\Pages\\Shopping Page\\AllProd.aspx",
+              "RelativeToolTip": "Bella\\Pages\\Shopping Page\\AllProd.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-01-02T15:24:30.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductDB.cs",
+              "DocumentMoniker": "C:\\Proj_BADPJ\\Bella\\Data\\ProductDB.cs",
+              "RelativeDocumentMoniker": "Bella\\Data\\ProductDB.cs",
+              "ToolTip": "C:\\Proj_BADPJ\\Bella\\Data\\ProductDB.cs",
+              "RelativeToolTip": "Bella\\Data\\ProductDB.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T15:18:59.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "view.aspx.cs",
+              "DocumentMoniker": "C:\\Proj_BADPJ\\Bella\\Pages\\Products\\view.aspx.cs",
+              "RelativeDocumentMoniker": "Bella\\Pages\\Products\\view.aspx.cs",
+              "ToolTip": "C:\\Proj_BADPJ\\Bella\\Pages\\Products\\view.aspx.cs",
+              "RelativeToolTip": "Bella\\Pages\\Products\\view.aspx.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T15:18:46.942Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

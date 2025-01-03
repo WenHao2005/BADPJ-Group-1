@@ -83,13 +83,9 @@
     <Content Include="Login.aspx" />
     <Content Include="Pages\Products\Add.aspx" />
     <Content Include="Pages\Products\delete.aspx" />
-    <Content Include="Pages\Products\label.aspx" />
     <Content Include="Pages\Products\update.aspx" />
     <Content Include="Pages\Products\view.aspx" />
     <Content Include="Pages\Shopping Page\AllProd.aspx" />
-    <Content Include="Pages\Shopping Page\filter.aspx" />
-    <Content Include="Pages\Shopping Page\filteredProd.aspx" />
-    <Content Include="Pages\Shopping Page\delme_Product.aspx" />
     <Content Include="Products.aspx" />
     <Content Include="Pages\Registration\Register.aspx" />
     <Content Include="UserManagement.aspx" />
@@ -143,13 +139,6 @@
     <Compile Include="Pages\Products\delete.aspx.designer.cs">
       <DependentUpon>delete.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Products\label.aspx.cs">
-      <DependentUpon>label.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\Products\label.aspx.designer.cs">
-      <DependentUpon>label.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Pages\Products\update.aspx.cs">
       <DependentUpon>update.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -170,27 +159,6 @@
     </Compile>
     <Compile Include="Pages\Shopping Page\AllProd.aspx.designer.cs">
       <DependentUpon>AllProd.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Shopping Page\filter.aspx.cs">
-      <DependentUpon>filter.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\Shopping Page\filter.aspx.designer.cs">
-      <DependentUpon>filter.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Shopping Page\filteredProd.aspx.cs">
-      <DependentUpon>filteredProd.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\Shopping Page\filteredProd.aspx.designer.cs">
-      <DependentUpon>filteredProd.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Shopping Page\delme_Product.aspx.cs">
-      <DependentUpon>delme_Product.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\Shopping Page\delme_Product.aspx.designer.cs">
-      <DependentUpon>delme_Product.aspx</DependentUpon>
     </Compile>
     <Compile Include="Products.aspx.cs">
       <DependentUpon>Products.aspx</DependentUpon>
