@@ -33,8 +33,11 @@ namespace Bella
 
         protected void gv_Appointments_RowEditing(object sender, System.Web.UI.WebControls.GridViewEditEventArgs e)
         {
-            gv_Appointments.EditIndex = e.NewEditIndex;
-            LoadAppointments();
+            // Retrieve the AppointmentID of the selected row
+            int appointmentId = Convert.ToInt32(gv_Appointments.DataKeys[e.NewEditIndex].Value);
+
+            // Redirect to AppointmentEdit.aspx with the AppointmentID as a query string parameter
+            Response.Redirect($"AppointmentEdit.aspx?AppointmentID={appointmentId}");
         }
 
         protected void gv_Appointments_RowUpdating(object sender, System.Web.UI.WebControls.GridViewUpdateEventArgs e)

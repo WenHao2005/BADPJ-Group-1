@@ -37,7 +37,12 @@
                 <asp:BoundField DataField="AppointmentDate" HeaderText="Appointment Date" />
                 <asp:BoundField DataField="AppointmentTime" HeaderText="Appointment Time" />
                 <asp:BoundField DataField="Gender" HeaderText="Gender" />
-                <asp:CommandField ShowEditButton="True" ButtonType="Link"/>
+                <asp:TemplateField>
+                    <ItemTemplate>
+                        <asp:LinkButton ID="lnkEdit" runat="server" Text="Update" PostBackUrl='<%# "~/AppointmentEdit.aspx?AppointmentID=" + Eval("AppointmentID") %>' />
+                    </ItemTemplate>
+                </asp:TemplateField>
+
                 <asp:TemplateField>
                     <ItemTemplate>
                         <asp:LinkButton ID="lnkDelete" runat="server" Text="Delete" 
